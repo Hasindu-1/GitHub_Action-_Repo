@@ -7,6 +7,11 @@ class MainTest {
 
     @Test
     void sampleTest() {
-        assertEquals(5, 2 + 3, "Simple math test");
+        //pass test
+       // assertEquals(5, 2 + 3, "Simple math test");
+
+        //fail test
+        assertEquals(6, 2 + 3, "This test is supposed to fail (2 + 3 != 6)");
+
     }
 }
