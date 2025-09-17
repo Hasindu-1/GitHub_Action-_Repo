@@ -13,4 +13,5 @@ EXPOSE 8080
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
-#just checking test
+#changed password  in git hub
+# Repository secrets
