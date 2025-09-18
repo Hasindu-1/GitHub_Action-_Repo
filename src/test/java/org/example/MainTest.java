@@ -6,12 +6,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void sampleTest() {
-        //pass test
-       assertEquals(5, 2 + 3, "Simple math test");
+    void testGetMessage() {
 
-        //fail test
-        //assertEquals(6, 2 + 3, "This test is supposed to fail (2 + 3 != 6)");
+        assertEquals("i = 3", Main.getMessage(3));
+
+       // assertEquals("i = 5", Main.getMessage(3));
 
     }
 }
