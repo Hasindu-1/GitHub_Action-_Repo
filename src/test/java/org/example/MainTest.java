@@ -8,7 +8,7 @@ class MainTest {
     @Test
     void testGetMessage() {
 
-        assertEquals("i = 3", Main.getMessage(3));
+         assertEquals("i = 3", Main.getMessage(3));
 
        // assertEquals("i = 5", Main.getMessage(3));
 
