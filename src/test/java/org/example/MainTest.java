@@ -6,11 +6,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class MainTest {
 
     @Test
-    void testGetMessage() {
+    void testGreetWithName() {
+        assertEquals("Hello, Hasindu!", Main.greet("Hasindu"));
+        assertEquals("Hello, Alice!", Main.greet("Alice"));
+    }
 
-         assertEquals("i = 3", Main.getMessage(3));
-
-       // assertEquals("i = 5", Main.getMessage(3));
-
+    @Test
+    void testGreetWithEmptyOrNull() {
+        assertEquals("Hello, Stranger!", Main.greet(""));
+        assertEquals("Hello, Stranger!", Main.greet(null));
     }
 }

@@ -2,17 +2,20 @@ package org.example;
 
 public class Main {
 
-    // Method that generates the message
-    public static String getMessage(int i) {
-        return "i = " + i;
+    // Method that generates a greeting message
+    public static String greet(String name) {
+        if (name == null || name.isEmpty()) {
+            return "Hello, Stranger!";
+        }
+        return "Hello, " + name + "!";
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello and welcome!");
+        System.out.println("Demo Greetings:");
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(getMessage(i));
-
-        }
+        // Example greetings
+        System.out.println(greet("Hasindu"));
+        System.out.println(greet(""));
+        System.out.println(greet(null));
     }
 }
