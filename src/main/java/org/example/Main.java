@@ -7,7 +7,7 @@ public class Main {
         if (name == null || name.isEmpty()) {
             return "Hello, Stranger!";
         }
-        return "Hello, " + name + "!";
+        return "Hello, " + name + " !";
     }
 
     public static void main(String[] args) {
